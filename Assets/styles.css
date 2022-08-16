@@ -1,0 +1,128 @@
+body{
+    background: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #fff;
+ }
+
+.wrapper_1{
+    background: url('./img/TT.jpg') no-repeat;
+    background-size: cover;
+}
+/*.wrapper_2{
+    background: url('./img/TT2.jpg') no-repeat;
+    background-size: cover;
+}*/
+
+/*---------- HEADER ----------*/
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 72px 0px;
+}
+.menu{
+    font-weight: 500;
+    font-size: 24px;
+    
+ }
+.menu-item{
+    margin-left: 128px;
+    position: relative;
+    transition: all .3s
+}
+
+.menu-item:hover{
+     
+}
+.menu-item:hover:before{
+    transform-origin: left;
+   transform: scaleX(1); /*<--Исходное положение*/
+   transition: transform 0.25s; /*<--Плавный переход*/
+}
+.menu-item:before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0; bottom: -3px;
+    transform: scaleX(0);
+    transform-origin: right;
+    -webkit-transition: -webkit-trasform 0.25s;
+    transition: -webkit-transform 0.25s;
+    -o-transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+/*---------- MAIN ----------*/
+
+.main{
+    margin-top: 101px;
+    text-align: center;
+}
+
+.main h1{
+   font-size: 96px;
+}
+
+.main-descr{
+    margin: 0px auto;
+    font-size: 24px;
+    width: 749px;
+    padding-top: auto;
+}
+
+/*---------- BUTTON ----------*/
+
+.button{
+    margin-top: 380px;
+    padding-bottom: 130px;
+}
+
+.join-btn {
+    width: 191px;
+    height: 60px; 
+    font-size: 24px;
+    border-radius: 8px;
+    cursor: pointer; 
+    border-color: #00B43D;
+    color: white;
+    background-color: transparent;
+    box-shadow: 0 0 40px 40px #00B43D inset, 0 0 0 0 #00B43D;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.join-btn:hover {
+  box-shadow: 0 0 10px 0 #00B43D inset, 0 0 10px 4px #00B43D;
+}
+
+/*---------- RECTANGLE ARTON ----------*/
+
+#rectangle{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background: #272727;
+    color:  white;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 32px;
+}
+
+/*---------- Paragraph 2 ----------*/
+
+
